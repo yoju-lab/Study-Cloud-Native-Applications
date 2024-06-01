@@ -1,4 +1,14 @@
 ## Deploying-Cloud-Native-Applications
+- 한교대 보수 강의 내용
+## refer 
+- [교재](https://github.com/Dennis-IDEACUBE/Deploying-Cloud-Native-Applications/blob/main/Deploying%20Cloud%20Native%20Application_1.0_Template.pdf)
+## Cloud Navie 
+- https://www.oracle.com/kr/cloud/cloud-native/what-is-cloud-native/
+- https://aws.amazon.com/ko/what-is/cloud-native/
+
+## Clond Native 표준
+- https://www.cncf.io/
+- https://landscape.cncf.io/
 
 ### WSL(Windows Subsystem for Linux)
 
