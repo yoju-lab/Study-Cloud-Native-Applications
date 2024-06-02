@@ -191,3 +191,31 @@ https://docs.github.com/ko/packages/working-with-a-github-packages-registry/work
 
 https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/sb-3-main
 
+### WSL Export & Import
+
+    * Export
+    wsl --export <WSL Image Name> <Export file>
+    wsl --export Ubuntu-22.04 c:\wsl_export\Ubuntu-22.04.tar
+    
+    * Import
+    wsl --import <Image Name you choose> <Directory to store and run the image> <Directory location of the exported .tar file>
+    wsl --import Ubuntu-22.04-Custom c:\wsl_import c:\wsl_export\Ubuntu-22.04.tar
+    
+    * Login(root) -> /etc/wsl.conf -> LogOut -> Login(user1)
+    
+    wsl -d Ubuntu-22.04-Custom
+    
+    # nano /etc/wsl.conf
+    [user]
+    default=user1
+    
+    # exit
+    wsl -t Ubuntu-22.04-Custom
+    
+    wsl -d Ubuntu-22.04-Custom 
+
+### Etc
+
+    docker run -d --name catalog-service --net catalog-network -p 9001:9001 -e SPRING_DATASOURCE_URL=jdbc:postgresql://polar-postgres:5432/polardb_catalog -e SPRING_PROFILES_ACTIVE=testdata catalog-service
+
+    docker run -d --name=polar-postgres --net catalog-network -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=polardb_catalog -p 5432:5432 postgres:14.4
