@@ -1,59 +1,19 @@
 ## Deploying-Cloud-Native-Applications
 - 한교대 보수 강의 내용
 
-Verify Installations:
-Inside the container, verify the installations:
-
-Java:
-
-bash
-Copy code
-java -version
-Minikube:
-
-bash
-Copy code
-minikube version
-kubectl:
-
-bash
-Copy code
-kubectl version --client
-Httpie:
-
-bash
-Copy code
-http --version
-Grype:
-
-bash
-Copy code
-grype version
-Tilt:
-
-bash
-Copy code
-tilt version
-Octant:
-
-bash
-Copy code
-octant version
-Kubeval:
-
-bash
-Copy code
-kubeval --version
-Knative CLI (kn):
-
-bash
-Copy code
-kn version
-Git Repository:
-
-bash
-Copy code
-ls /apps
+## Verify Installations:
+```
+~$ java -version
+~$ minikube version
+~$ kubectl version --client
+~$ http --version
+~$ grype version
+~$ tilt version
+~$ octant version
+~$ kubeval --version
+~$ kn version
+~$ ls /apps
+```
 ## refer 
 - [교재](https://github.com/Dennis-IDEACUBE/Deploying-Cloud-Native-Applications/blob/main/Deploying%20Cloud%20Native%20Application_1.0_Template.pdf)
 ## Cloud Navie 
