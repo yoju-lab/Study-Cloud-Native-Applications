@@ -14,6 +14,10 @@
 ~$ kn version
 ~$ ls /apps
 ```
+
+## 수정 내용
+- Dockerfile
+- 
 ## refer 
 - [교재](https://github.com/Dennis-IDEACUBE/Deploying-Cloud-Native-Applications/blob/main/Deploying%20Cloud%20Native%20Application_1.0_Template.pdf)
 ## Cloud Navie 
